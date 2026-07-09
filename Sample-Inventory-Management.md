@@ -17,6 +17,8 @@ The working metadata is included under
 A tappable **Sample IM** action on the Home screen that opens the LSC
 `SampleManagementLandingPage` inside an in-app webview.
 
+![Sample IM custom action opening the LSC Sample Management landing page on the Home screen](./assets/Embedded_SampleInventoryManagement.gif)
+
 Because it lives on the Home screen, there is **no record in context** — it is a plain
 static URL, so no parameters, no QuickAction, and no page-layout change are required.
 
