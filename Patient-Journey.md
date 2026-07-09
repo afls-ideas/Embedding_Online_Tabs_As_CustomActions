@@ -17,6 +17,8 @@ The working metadata is included under
 A tappable **Patient Journey** action on the Home screen that opens the
 `Patient_Journey_Simulator` tab inside an in-app webview.
 
+![Patient Journey custom action opening the Patient Journey Simulator LWC on the Home screen](./assets/Embedded_Patient_Journey.gif)
+
 Because it lives on the Home screen, there is **no record in context** — it is a plain
 static URL, so no parameters, no QuickAction, and no page-layout change are required.
 

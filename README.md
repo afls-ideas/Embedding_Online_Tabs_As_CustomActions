@@ -35,6 +35,29 @@ Administration > Custom Actions**.
 > deploy, we set it to `Inline`. This will be corrected in the future to accept the value
 > of `Internal`.
 
+## Advanced configuration
+
+This is a more advanced configuration. The **Target Type** cannot currently be set to
+`Inline` through the Admin Console UI — the configurator must update the metadata Target
+Type to `Inline` directly. This is done by **deploying the available `LifeSciConfigRecord`
+XML files** in [`force-app/`](./force-app/main/default/lifeSciConfigRecords/):
+
+```bash
+sf project deploy start --source-dir force-app --target-org <your-org-alias>
+```
+
+After deploying, regenerate the mobile metadata cache for the relevant profile(s) and
+hard-sync the device.
+
+### Use cases
+
+1. **Tableau Next / Tableau** — embed a Tableau dashboard on the Home screen.
+2. **Salesforce Maps** — open the Salesforce Maps app.
+3. **Other AFLS tabs that are online only** — surface online-only AFLS tabs from the FAB.
+4. **LWCs that need to be full screen** — e.g. custom apps that customers have built.
+5. **External 3rd-party apps that cannot be embedded in any iframe** — open them in a
+   browser-level window rather than an embedded frame.
+
 ## Repository layout
 
 ```
