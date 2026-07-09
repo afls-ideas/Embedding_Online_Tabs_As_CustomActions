@@ -16,7 +16,7 @@
         <dataType>TEXT</dataType>
         <fieldName>ActionTarget</fieldName>
         <hasBooleanValue>false</hasBooleanValue>
-        <textValue>https://trailsignup-18142fec8660f1.lightning.force.com/lightning/n/lsc4ce__SampleManagementLandingPage</textValue>
+        <textValue>https://your-my-domain.lightning.force.com/lightning/n/lsc4ce__SampleManagementLandingPage</textValue>
     </fieldValues>
     <fieldValues>
         <dataType>PICKLIST</dataType>

@@ -16,7 +16,7 @@
         <dataType>TEXT</dataType>
         <fieldName>ActionTarget</fieldName>
         <hasBooleanValue>false</hasBooleanValue>
-        <textValue>https://trailsignup-18142fec8660f1.lightning.force.com/tableau/dashboard/SP_Analyzer_Dashboard/view</textValue>
+        <textValue>https://your-my-domain.lightning.force.com/tableau/dashboard/SP_Analyzer_Dashboard/view</textValue>
     </fieldValues>
     <fieldValues>
         <dataType>PICKLIST</dataType>

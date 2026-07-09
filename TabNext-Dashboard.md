@@ -4,7 +4,8 @@ This guide documents how to add the **TabNext Dashboard** custom action to the L
 app **Home screen**, opening an embedded Tableau dashboard from the floating action
 button (FAB).
 
-Deployed to org `262-lsdo` (LSC4CE, instance `trailsignup-18142fec8660f1`, API version 66.0).
+Targets an LSC4CE org (API version 66.0). Replace the `your-my-domain` host in the URLs
+below with your org's My Domain.
 
 The working metadata is included under
 [`force-app/`](./force-app/main/default/lifeSciConfigRecords/CustomAction_TabNextDashboard.lifeSciConfigRecord-meta.xml).
@@ -58,7 +59,7 @@ A Home-screen LSC custom action needs only **one** metadata component:
 | Label (`masterLabel`) | `TabNext Dashboard` |
 | Entity Type | `HomePage` |
 | Action Type | `URL` |
-| Action Target | `https://trailsignup-18142fec8660f1.lightning.force.com/tableau/dashboard/SP_Analyzer_Dashboard/view` |
+| Action Target | `https://your-my-domain.lightning.force.com/tableau/dashboard/SP_Analyzer_Dashboard/view` |
 | Target Type | `Inline` |
 | Active | `true` |
 
@@ -85,7 +86,7 @@ A Home-screen LSC custom action needs only **one** metadata component:
         <dataType>TEXT</dataType>
         <fieldName>ActionTarget</fieldName>
         <hasBooleanValue>false</hasBooleanValue>
-        <textValue>https://trailsignup-18142fec8660f1.lightning.force.com/tableau/dashboard/SP_Analyzer_Dashboard/view</textValue>
+        <textValue>https://your-my-domain.lightning.force.com/tableau/dashboard/SP_Analyzer_Dashboard/view</textValue>
     </fieldValues>
     <fieldValues>
         <dataType>PICKLIST</dataType>
@@ -111,7 +112,7 @@ A Home-screen LSC custom action needs only **one** metadata component:
    - **Deploy the metadata** — place the `.lifeSciConfigRecord-meta.xml` under a
      `lifeSciConfigRecords/` folder in an SFDX project and deploy:
      ```bash
-     sf project deploy start --source-dir force-app --target-org 262-lsdo
+     sf project deploy start --source-dir force-app --target-org <your-org-alias>
      ```
 2. **Set Target Type = Inline** (if you created via the MCP tool, which defaults to
    `External`).
@@ -148,8 +149,8 @@ A Home-screen LSC custom action needs only **one** metadata component:
 
 ---
 
-## Reference: deployed values in `262-lsdo`
+## Reference: configured values
 
 | Component | Developer Name | Key values |
 |-----------|----------------|------------|
-| Home action | `CustomAction_TabNextDashboard` | HomePage · URL · Inline · `https://trailsignup-18142fec8660f1.lightning.force.com/tableau/dashboard/SP_Analyzer_Dashboard/view` |
+| Home action | `CustomAction_TabNextDashboard` | HomePage · URL · Inline · `https://your-my-domain.lightning.force.com/tableau/dashboard/SP_Analyzer_Dashboard/view` |

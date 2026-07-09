@@ -4,7 +4,8 @@ This guide documents how to add the **Sample IM** custom action to the LSC mobil
 app **Home screen**, opening the Sample Management landing page from the floating action
 button (FAB).
 
-Deployed to org `262-lsdo` (LSC4CE, instance `trailsignup-18142fec8660f1`, API version 66.0).
+Targets an LSC4CE org (API version 66.0). Replace the `your-my-domain` host in the URLs
+below with your org's My Domain.
 
 The working metadata is included under
 [`force-app/`](./force-app/main/default/lifeSciConfigRecords/CustomAction_SampleIM.lifeSciConfigRecord-meta.xml).
@@ -56,7 +57,7 @@ A Home-screen LSC custom action needs only **one** metadata component:
 | Label (`masterLabel`) | `Sample IM` |
 | Entity Type | `HomePage` |
 | Action Type | `URL` |
-| Action Target | `https://trailsignup-18142fec8660f1.lightning.force.com/lightning/n/lsc4ce__SampleManagementLandingPage` |
+| Action Target | `https://your-my-domain.lightning.force.com/lightning/n/lsc4ce__SampleManagementLandingPage` |
 | Target Type | `Inline` |
 | Active | `true` |
 
@@ -83,7 +84,7 @@ A Home-screen LSC custom action needs only **one** metadata component:
         <dataType>TEXT</dataType>
         <fieldName>ActionTarget</fieldName>
         <hasBooleanValue>false</hasBooleanValue>
-        <textValue>https://trailsignup-18142fec8660f1.lightning.force.com/lightning/n/lsc4ce__SampleManagementLandingPage</textValue>
+        <textValue>https://your-my-domain.lightning.force.com/lightning/n/lsc4ce__SampleManagementLandingPage</textValue>
     </fieldValues>
     <fieldValues>
         <dataType>PICKLIST</dataType>
@@ -109,7 +110,7 @@ A Home-screen LSC custom action needs only **one** metadata component:
    - **Deploy the metadata** — the `.lifeSciConfigRecord-meta.xml` lives under
      `force-app/main/default/lifeSciConfigRecords/` and deploys directly:
      ```bash
-     sf project deploy start --source-dir force-app --target-org 262-lsdo
+     sf project deploy start --source-dir force-app --target-org <your-org-alias>
      ```
 2. **Set Target Type = Inline** (if you created via the MCP tool, which defaults to
    `External`).
@@ -146,8 +147,8 @@ A Home-screen LSC custom action needs only **one** metadata component:
 
 ---
 
-## Reference: deployed values in `262-lsdo`
+## Reference: configured values
 
 | Component | Developer Name | Key values |
 |-----------|----------------|------------|
-| Home action | `CustomAction_SampleIM` | HomePage · URL · Inline · `https://trailsignup-18142fec8660f1.lightning.force.com/lightning/n/lsc4ce__SampleManagementLandingPage` |
+| Home action | `CustomAction_SampleIM` | HomePage · URL · Inline · `https://your-my-domain.lightning.force.com/lightning/n/lsc4ce__SampleManagementLandingPage` |
