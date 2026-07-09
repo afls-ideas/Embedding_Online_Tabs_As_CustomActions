@@ -20,6 +20,7 @@ Life Sciences Cloud (LSC) mobile — for both the Home screen and record screens
 | [TabNext Dashboard](./TabNext-Dashboard.md) | Add a Home-screen custom action that opens an embedded Tableau dashboard (Inline webview). |
 | [Sample Inventory Management](./Sample-Inventory-Management.md) | Add a Home-screen custom action (**Sample IM**) that opens the LSC Sample Management landing page (Inline webview). |
 | [SF Maps](./SF-Maps.md) | Add a Home-screen custom action (**SF Maps**) that opens the Salesforce Maps app (Inline webview). |
+| [Patient Journey](./Patient-Journey.md) | Add a Home-screen custom action (**Patient Journey**) that opens the Patient Journey Simulator (Inline webview). |
 
 _More Quick Action guides will be added here over time._
 
@@ -40,6 +41,7 @@ Administration > Custom Actions**.
 TabNext-Dashboard.md                 ← TabNext dashboard guide
 Sample-Inventory-Management.md       ← Sample IM (Sample Inventory Management) guide
 SF-Maps.md                           ← SF Maps guide
+Patient-Journey.md                   ← Patient Journey guide
 assets/                              ← images / GIFs used by the guides
 force-app/                           ← deployable SFDX source (lifeSciConfigRecords)
 ```
