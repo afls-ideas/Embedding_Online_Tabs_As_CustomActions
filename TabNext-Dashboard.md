@@ -42,7 +42,7 @@ A Home-screen LSC custom action needs only **one** metadata component:
 |-------|----------|
 | `Inline` | Opens the URL in an in-app modal webview. **Used here.** |
 | `External` | Opens in the device browser (Safari). |
-| `Internal` | Full-screen navigation within the app. Does **not** work for pages that forbid framing (e.g. Lightning `/lightning/n/...` pages return a CSP "content is blocked" error). |
+| `Internal` | Full-screen navigation within the app. Does **not** work for some Lightning `/lightning/n/...` pages, which can return a "content is blocked" error. |
 
 > **Note:** `Inline` is not offered by the `create_custom_action` MCP tool (which only
 > accepts `Internal`/`External`). If creating via the tool, create the action as
@@ -137,15 +137,9 @@ A Home-screen LSC custom action needs only **one** metadata component:
 | Symptom | Cause / Fix |
 |---------|-------------|
 | Action does not appear on the Home FAB | Action inactive, cache not regenerated, or device not hard-synced. Set Active = true, regenerate cache, hard-sync. |
-| **"This content is blocked" in the webview** | The target page forbids framing. Lightning Experience URLs (`*.lightning.force.com/...`) frequently return a CSP framing error inside an `Inline` webview. **Fix:** switch `TargetType` to `External` so the dashboard opens in the device browser. |
+| **"This content is blocked" in the webview** | Some Lightning Experience pages (`*.lightning.force.com/...`) do not load inside the in-app `Inline` webview. **Fix:** switch `TargetType` to `External` so the dashboard opens in the device browser. |
 | Tap does nothing | Relative path in Action Target, or an unreachable URL. Use a full `https://` URL. |
 | Changes not reflected on device | Cache not regenerated, or device not hard-synced. Regenerate cache and fully close/reopen the app. |
-
-> **⚠️ Framing caveat for this dashboard.** The Action Target is a Lightning
-> `/tableau/dashboard/...` URL served from `*.lightning.force.com`. Lightning pages often
-> forbid being embedded in an iframe, so the `Inline` webview may show a CSP
-> *"This content is blocked"* error. If that happens, change **Target Type** from `Inline`
-> to `External` (opens in the device browser) and regenerate the cache + hard-sync.
 
 ---
 
