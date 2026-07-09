@@ -14,6 +14,17 @@ Life Sciences Cloud (LSC) mobile — for both the Home screen and record screens
 
 _More Quick Action guides will be added here over time._
 
+## What the Custom Action looks like
+
+To view or edit a custom action, navigate to **Admin Console > Quick and Custom Action
+Administration > Custom Actions**.
+
+![Edit Custom Action dialog in the Admin Console, showing the TabNext Dashboard custom action](./assets/CustomAction_EditView_Admin_Console.png)
+
+> **Note:** The **Target Type** field shows up blank ("Select an Option") because when we
+> deploy, we set it to `Inline`. This will be corrected in the future to accept the value
+> of `Internal`.
+
 ## Repository layout
 
 ```
