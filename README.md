@@ -3,6 +3,14 @@
 Guides and working metadata for configuring Quick Actions and Custom Actions in
 Life Sciences Cloud (LSC) mobile — for both the Home screen and record screens.
 
+> **⚠️ Disclaimer**
+>
+> This is **not** an official Salesforce repository, and it is not supported by
+> Salesforce. All information, guides, and metadata are provided **AS IS**, without
+> warranty of any kind, express or implied. Customers must perform their own due
+> diligence and testing before using any of this content in a production org. Use at
+> your own risk.
+
 ![TabNext Dashboard custom action opening an embedded Tableau dashboard on the Home screen](./assets/Embedded_TabNext.gif)
 
 ## Guides
