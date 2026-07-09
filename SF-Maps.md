@@ -17,6 +17,8 @@ The working metadata is included under
 A tappable **SF Maps** action on the Home screen that opens the Salesforce Maps
 `maps__Maps` tab inside an in-app webview.
 
+![SF Maps custom action opening the Salesforce Maps app on the Home screen](./assets/Embedded_SF_Maps.gif)
+
 Because it lives on the Home screen, there is **no record in context** — it is a plain
 static URL, so no parameters, no QuickAction, and no page-layout change are required.
 
