@@ -1,7 +1,17 @@
 # AFLS Quick and Custom Actions
 
 Guides and working metadata for configuring Quick Actions and Custom Actions in
-Life Sciences Cloud (LSC) mobile — for both the Home screen and record screens.
+Life Sciences Cloud (LSC) mobile — for the Home screen.  This is for customers that want to launch some functionality available online, but do not want their users leaving the AFLS app.  That is, keep the users in the flow of work.
+
+### Use cases
+
+1. **Tableau Next / Tableau** — launch a Tableau dashboard as a modal from the Home screen.
+2. **Salesforce Maps** — launch the Salesforce Maps app as a modal from the Home screen.
+3. **Other AFLS tabs that are online only** — surface online-only AFLS to be launched directly from the mobile app
+4. **LWCs that need to be full screen** — e.g. launch custom apps that customers have built.
+5. **External 3rd-party apps that cannot be embedded in any iframe** — open them in a
+   browser-level window rather than an embedded frame.
+
 
 > **⚠️ Disclaimer**
 >
@@ -48,15 +58,6 @@ sf project deploy start --source-dir force-app --target-org <your-org-alias>
 
 After deploying, regenerate the mobile metadata cache for the relevant profile(s) and
 hard-sync the device.
-
-### Use cases
-
-1. **Tableau Next / Tableau** — embed a Tableau dashboard on the Home screen.
-2. **Salesforce Maps** — open the Salesforce Maps app.
-3. **Other AFLS tabs that are online only** — surface online-only AFLS tabs from the FAB.
-4. **LWCs that need to be full screen** — e.g. custom apps that customers have built.
-5. **External 3rd-party apps that cannot be embedded in any iframe** — open them in a
-   browser-level window rather than an embedded frame.
 
 ## Repository layout
 
