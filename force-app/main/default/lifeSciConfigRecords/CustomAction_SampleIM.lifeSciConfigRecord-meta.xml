@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LifeSciConfigRecord xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldValues>
+        <dataType>PICKLIST</dataType>
+        <fieldName>EntityType</fieldName>
+        <hasBooleanValue>false</hasBooleanValue>
+        <picklistValue>HomePage</picklistValue>
+    </fieldValues>
+    <fieldValues>
+        <dataType>PICKLIST</dataType>
+        <fieldName>TargetType</fieldName>
+        <hasBooleanValue>false</hasBooleanValue>
+        <picklistValue>Inline</picklistValue>
+    </fieldValues>
+    <fieldValues>
+        <dataType>TEXT</dataType>
+        <fieldName>ActionTarget</fieldName>
+        <hasBooleanValue>false</hasBooleanValue>
+        <textValue>https://trailsignup-18142fec8660f1.lightning.force.com/lightning/n/lsc4ce__SampleManagementLandingPage</textValue>
+    </fieldValues>
+    <fieldValues>
+        <dataType>PICKLIST</dataType>
+        <fieldName>ActionType</fieldName>
+        <hasBooleanValue>false</hasBooleanValue>
+        <picklistValue>URL</picklistValue>
+    </fieldValues>
+    <isActive>true</isActive>
+    <isOrgLevel>false</isOrgLevel>
+    <lifeSciConfigCategory>CustomAction</lifeSciConfigCategory>
+    <masterLabel>Sample IM</masterLabel>
+</LifeSciConfigRecord>
